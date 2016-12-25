@@ -1,0 +1,605 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="随着时间的推移，接触到了项目深层次的东西，也开始慢慢发现了项目中存在的问题，以一个新手的身份从产品角度分析一下项目的失败之处。
+1、忽视交互设计，导致重点缺失
+作为一个客户端游戏，玩家每次进入游戏都需要点击大量的下一步，下一步，PPT一样枯燥的展示游戏中的内容，完全不考虑玩家感受。lobby界面单调的按钮展示，重点突出比赛而忽视其它休闲内容的建设，直接导致玩家只能不停的进行激烈的比赛，增加玩家的疲">
+<meta property="og:type" content="article">
+<meta property="og:title" content="游戏产品六宗罪">
+<meta property="og:url" content="http://yoursite.com/2013/06/29/e6-b8-b8-e6-88-8f-e4-ba-a7-e5-93-81-e5-85-ad-e5-ae-97-e7-bd-aa/index.html">
+<meta property="og:site_name" content="菜鸟PM">
+<meta property="og:description" content="随着时间的推移，接触到了项目深层次的东西，也开始慢慢发现了项目中存在的问题，以一个新手的身份从产品角度分析一下项目的失败之处。
+1、忽视交互设计，导致重点缺失
+作为一个客户端游戏，玩家每次进入游戏都需要点击大量的下一步，下一步，PPT一样枯燥的展示游戏中的内容，完全不考虑玩家感受。lobby界面单调的按钮展示，重点突出比赛而忽视其它休闲内容的建设，直接导致玩家只能不停的进行激烈的比赛，增加玩家的疲">
+<meta property="og:updated_time" content="2016-07-27T13:46:46.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="游戏产品六宗罪">
+<meta name="twitter:description" content="随着时间的推移，接触到了项目深层次的东西，也开始慢慢发现了项目中存在的问题，以一个新手的身份从产品角度分析一下项目的失败之处。
+1、忽视交互设计，导致重点缺失
+作为一个客户端游戏，玩家每次进入游戏都需要点击大量的下一步，下一步，PPT一样枯燥的展示游戏中的内容，完全不考虑玩家感受。lobby界面单调的按钮展示，重点突出比赛而忽视其它休闲内容的建设，直接导致玩家只能不停的进行激烈的比赛，增加玩家的疲">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2013/06/29/e6-b8-b8-e6-88-8f-e4-ba-a7-e5-93-81-e5-85-ad-e5-ae-97-e7-bd-aa/"/>
+
+  <title> 游戏产品六宗罪 | 菜鸟PM </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">菜鸟PM</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                游戏产品六宗罪
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2013-06-29T00:52:33+08:00" content="2013-06-29">
+              2013-06-29
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/产品经理/" itemprop="url" rel="index">
+                    <span itemprop="name">产品经理</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>随着时间的推移，接触到了项目深层次的东西，也开始慢慢发现了项目中存在的问题，以一个新手的身份从产品角度分析一下项目的失败之处。</p>
+<p>1、忽视交互设计，导致重点缺失</p>
+<p>作为一个客户端游戏，玩家每次进入游戏都需要点击大量的下一步，下一步，PPT一样枯燥的展示游戏中的内容，完全不考虑玩家感受。lobby界面单调的按钮展示，重点突出比赛而忽视其它休闲内容的建设，直接导致玩家只能不停的进行激烈的比赛，增加玩家的疲劳感，从而减少在客户端上停留的时间。</p>
+<p>2、忽视玩家的实际需求</p>
+<p>经常玩游戏逛BBS其实就可以很清楚明晰地知道玩家需要的扣篮大赛、三分球大赛、斗牛房。深层次的挖掘可以知道玩家需要的多样化的游戏模式，而不是简单重复的比赛，如果重视玩家的需求，那么项目的开发应该朝这个方向努力，但实际因为商业目的这些需求却被推后。</p>
+<p>3、过分商业化，导致玩家反感</p>
+<p>最新推出技能系统，而这个系统的推出完全是出于商业目的，据内部计算玩家升满级一个技能需要3000RMB，前期推出的有5个技能，后期会推出更多。由于2K原作优秀的计算方式，技能其实对游戏的平衡性影响并不大，但玩家却不这么认为，传统MMORPG游戏的收费模式是如果你不花钱去购买，那么你必须在游戏上花费大量的时间。但我们游戏中的系统却是你不花钱就无法进行技能升级。</p>
+<p>4、缺失规范化的流程管理</p>
+<p>作为QA的这一年中，项目经常会出现这样的问题，美术修改的相应的美术资源，但程序却不知道，直接导致游戏中美术资源缺失。PM反复强调某一功能的添加，而程序最后还是忘记把修改的代码添加到Gamelib中。这些直接导致版本错误而需要重新编译，每次编译都需要花费3~4个小时。规范化流程管理的缺失，导致项目不能按预期计划中进行。</p>
+<p>5、将“添加功能”当做“产品提高”</p>
+<p>产品基本成型后，为了对版本进行更新，提升玩家的新鲜感，策划会不停地向产品中添加新的功能，错误的认为“添加功能”就是“产品提高”，比如比赛数据的实时显示，花费大量人力物力添加的功能其实只满足的很小很小一部分用户的需求，不停的对产品做加法，最终导致产品臃肿不堪。</p>
+<p>6、缺乏全局掌控</p>
+<p>首推的就是inGame模块下各个弹窗，目前所有的弹出窗口基本上可以把整个屏幕布满，与2K原作比较，原作inGame下只有很小的NBA2K图标和一个小的scoreboard，整个屏幕上没有其它东西，以此让玩家能够专心沉浸在比赛当中，虽然online不一样，但也不至于弹出各种各样的窗口来干扰玩家的比赛。缺乏一个强势的PM从高层次规范产品，于是产品内容十分杂烂。</p>
+<p>&nbsp;</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2013/06/27/e8-8f-9c-e9-b8-9fpm-e7-9a-84-e8-81-8c-e4-b8-9a-e8-a7-84-e5-88-92/" rel="next" title="菜鸟PM的职业规划">
+                <i class="fa fa-chevron-left"></i> 菜鸟PM的职业规划
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2013/07/08/e6-89-80-e6-9c-89-e7-9a-84-e6-9c-8d-e5-8a-a1-e9-83-bd-e6-98-af-e5-af-b9-e4-bf-a1-e6-81-af-e7-9a-84-e5-a4-84-e7-90-86/" rel="prev" title="所有的服务都是对信息的处理">
+                所有的服务都是对信息的处理 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="叶新(Sam)" />
+          <p class="site-author-name" itemprop="name">叶新(Sam)</p>
+          <p class="site-description motion-element" itemprop="description">体验一个更大的世界</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">47</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">叶新(Sam)</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

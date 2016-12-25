@@ -1,0 +1,585 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="1、作为一个QA的好处就是你可以接触到项目中其它每个部门的工作，产品、运营、美术、程序， 通过帮助他们做事情，了解他们的工作方式及内容。产品经理只有了解了这些，掌握了他们工作的基本知识才能与他们交流，才能更好的进行统筹安排。正如《结网》中说的那样，你可以不懂技术，但你应该知道这个技术可以实现什么。2、读书，这里的阅读是指书本，一本书代表了一个作者系统的思维，而且文字更加精炼、准确 。知乎上提到的书">
+<meta property="og:type" content="article">
+<meta property="og:title" content="QA如何转型成为PM">
+<meta property="og:url" content="http://yoursite.com/2013/07/16/qa-e5-a6-82-e4-bd-95-e8-bd-ac-e5-9e-8b-e6-88-90-e4-b8-bapm/index.html">
+<meta property="og:site_name" content="菜鸟PM">
+<meta property="og:description" content="1、作为一个QA的好处就是你可以接触到项目中其它每个部门的工作，产品、运营、美术、程序， 通过帮助他们做事情，了解他们的工作方式及内容。产品经理只有了解了这些，掌握了他们工作的基本知识才能与他们交流，才能更好的进行统筹安排。正如《结网》中说的那样，你可以不懂技术，但你应该知道这个技术可以实现什么。2、读书，这里的阅读是指书本，一本书代表了一个作者系统的思维，而且文字更加精炼、准确 。知乎上提到的书">
+<meta property="og:updated_time" content="2016-07-27T13:46:46.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="QA如何转型成为PM">
+<meta name="twitter:description" content="1、作为一个QA的好处就是你可以接触到项目中其它每个部门的工作，产品、运营、美术、程序， 通过帮助他们做事情，了解他们的工作方式及内容。产品经理只有了解了这些，掌握了他们工作的基本知识才能与他们交流，才能更好的进行统筹安排。正如《结网》中说的那样，你可以不懂技术，但你应该知道这个技术可以实现什么。2、读书，这里的阅读是指书本，一本书代表了一个作者系统的思维，而且文字更加精炼、准确 。知乎上提到的书">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2013/07/16/qa-e5-a6-82-e4-bd-95-e8-bd-ac-e5-9e-8b-e6-88-90-e4-b8-bapm/"/>
+
+  <title> QA如何转型成为PM | 菜鸟PM </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">菜鸟PM</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                QA如何转型成为PM
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2013-07-16T11:37:32+08:00" content="2013-07-16">
+              2013-07-16
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/产品经理/" itemprop="url" rel="index">
+                    <span itemprop="name">产品经理</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <div>1、作为一个QA的好处就是你可以接触到项目中其它每个部门的工作，产品、运营、美术、程序， 通过帮助他们做事情，了解他们的工作方式及内容。产品经理只有了解了这些，掌握了他们工作的基本知识才能与他们交流，才能更好的进行统筹安排。正如《结网》中说的那样，你可以不懂技术，但你应该知道这个技术可以实现什么。</div><br><div>2、读书，这里的阅读是指书本，一本书代表了一个作者系统的思维，而且文字更加精炼、准确 。</div><br><div><br><div>知乎上提到的书单（<a href="http://www.zhihu.com/question/19568240" target="_blank" rel="external">http://www.zhihu.com/question/19568240</a>）</div><br>&gt; <div><br>&gt; <div><br>&gt;<br>&gt; <em>   《产品经理手册》——哥乔斯<br>&gt; </em>   《结网》——王坚<br>&gt; <em>   《人人都是产品经理》——苏杰<br>&gt; </em>   《失控》<br>&gt; <em>   《用户体验的要素》<br>&gt; </em>   《Don’t make me think》<br>&gt; <em>   《学会提问》<br>&gt; </em>   《精益求精–卓越的互联网产品设计与管理》<br>&gt; <em>   《项目管理之美》：偏重于项目管理<br>&gt; </em>   《掌握需求过程》：偏重于需求挖掘<br>&gt; <em>   《流程管理》 ：偏重于项目型团队产品经理<br>&gt; </em>   《网站设计解构》：偏重于 web 产品经理<br>&gt; <em>   《瞬间之美》 ：同上<br>&gt; </em>   《GUI 设计禁忌》 ：偏重于客户端产品经理<br>&gt; <em>   《About Face 3 交互设计精髓》：偏重于客户端产品经理<br>&gt; </em>   《用户体验度量》：有一定用户群产品的产品经理可以看<br>&gt; <em>   《胜于言传：网站内容制胜宝典》：资讯类网站产品经理最好看一看<br>&gt; </em>   《Web导航设计》：偏重Web<br>&gt; <em>   《锦绣蓝图》：怎样规划令人流连忘返的网站<br>&gt; </em>   《赢在用户》<br>&gt; <em>   《重来》<br>&gt; </em>   《瞬间之美》<br>&gt; <em>   《湿营销》<br>&gt; </em>   《世界是平的》<br>&gt; <em>   《三双鞋》<br>&gt; </em>   《故事的领导力》<br>&gt; <em>   《人月神话》<br>&gt; </em>   《情感化设计》<br>&gt; <em>   《经济学的思维方式》<br>&gt; </em>   《社会心理学》<br>&gt; <em>   《用户体验面面观》<br>&gt; </em>   《启示录-打造用户喜爱的产品》<br>&gt; </div><br>&gt; </div><br><div><br><div>3、阅读资讯，这里的咨询指的互联网上碎片知识，博客、知乎、媒体网站等，通过媒体网站来了解行业内的最新资讯，通过知乎和个人博客学习PM大鸟对某些方面知识的深入探究与理解。</div><br><div>4、体验互联网产品，跟做游戏是一个道理，PM应该深入体验各种互联网产品，知道产品为什么会成功，为什么会失败，就例如微信，虽然操作体验异常糟糕，但因为有很多抓住用户的亮点，也成为了一款不错的应用。学习别人优秀的地方，避免别人犯过的错误。</div><br><div>5、交流（QQ群，BBS等） ，主动与已入职的PM进行交流，学习他们的思维方式和关注点，请教他们自己不懂的问题，每个人都是老师，都有值得别人去学习的点。</div><br><div>6、动手去做<br><div><br>&gt; <div>【学习的7-2-1法则】70%的知识是在做事的过程中学到的，即learning by doing；20%是在通过与他人交流中学到的，即有用的二手经验；剩下的10%才是通过看书等理论学习获得的。</div><br><div><span style="color: #333333; font-family: Arial, Helvetica, sans-serif;">只有亲自动手去做才知道自己在哪方面欠缺，虽然自己还接触不到很多PM的相关工作，但可以利用空闲时间去做些自己能做的事情，用Axure画我们产品的流程图，改进工作的流程使之更加完善。又比如写博客，坚持把自己思考后的东西写下来，一方面锻炼自己的文笔能力，又加深了思考和整理能力。</span></div><br><div></div><br><div>1岁的QA，-1岁的PM正在成长的路上。</div><br></div><br></div><br><div></div><br></div><br></div>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2013/07/08/e6-89-80-e6-9c-89-e7-9a-84-e6-9c-8d-e5-8a-a1-e9-83-bd-e6-98-af-e5-af-b9-e4-bf-a1-e6-81-af-e7-9a-84-e5-a4-84-e7-90-86/" rel="next" title="所有的服务都是对信息的处理">
+                <i class="fa fa-chevron-left"></i> 所有的服务都是对信息的处理
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2013/07/20/逃离游戏公司/" rel="prev" title="逃离游戏公司">
+                逃离游戏公司 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="叶新(Sam)" />
+          <p class="site-author-name" itemprop="name">叶新(Sam)</p>
+          <p class="site-description motion-element" itemprop="description">体验一个更大的世界</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">47</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">叶新(Sam)</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

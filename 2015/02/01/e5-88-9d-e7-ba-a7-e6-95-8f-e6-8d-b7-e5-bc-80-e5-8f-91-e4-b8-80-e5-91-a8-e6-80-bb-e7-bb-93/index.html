@@ -1,0 +1,593 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="项目管理," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="上周在老大的发起下开始用敏捷的方法来管理项目，之所以加个初级，是因为对于敏捷开发的理解只来源网上的几篇文章而已，并没有系统的去学习整个流程。 先简单地说下我们的项目是如何进行初级敏捷开发的。 第一步：整理目前的工作任务，将每个工作任务分为Task、Doing、Check、Done，并贴在看板上。这一步的目的在于让项目成员知道我们做过什么，正在做什么以及未来会做什么，心中对整个项目有一个总体的了解，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="初级敏捷开发一周总结">
+<meta property="og:url" content="http://yoursite.com/2015/02/01/e5-88-9d-e7-ba-a7-e6-95-8f-e6-8d-b7-e5-bc-80-e5-8f-91-e4-b8-80-e5-91-a8-e6-80-bb-e7-bb-93/index.html">
+<meta property="og:site_name" content="菜鸟PM">
+<meta property="og:description" content="上周在老大的发起下开始用敏捷的方法来管理项目，之所以加个初级，是因为对于敏捷开发的理解只来源网上的几篇文章而已，并没有系统的去学习整个流程。 先简单地说下我们的项目是如何进行初级敏捷开发的。 第一步：整理目前的工作任务，将每个工作任务分为Task、Doing、Check、Done，并贴在看板上。这一步的目的在于让项目成员知道我们做过什么，正在做什么以及未来会做什么，心中对整个项目有一个总体的了解，">
+<meta property="og:image" content="http://www.rokpm.com/wp-content/uploads/2015/02/IMG_1869-300x300.jpg">
+<meta property="og:updated_time" content="2016-07-27T13:46:46.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="初级敏捷开发一周总结">
+<meta name="twitter:description" content="上周在老大的发起下开始用敏捷的方法来管理项目，之所以加个初级，是因为对于敏捷开发的理解只来源网上的几篇文章而已，并没有系统的去学习整个流程。 先简单地说下我们的项目是如何进行初级敏捷开发的。 第一步：整理目前的工作任务，将每个工作任务分为Task、Doing、Check、Done，并贴在看板上。这一步的目的在于让项目成员知道我们做过什么，正在做什么以及未来会做什么，心中对整个项目有一个总体的了解，">
+<meta name="twitter:image" content="http://www.rokpm.com/wp-content/uploads/2015/02/IMG_1869-300x300.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2015/02/01/e5-88-9d-e7-ba-a7-e6-95-8f-e6-8d-b7-e5-bc-80-e5-8f-91-e4-b8-80-e5-91-a8-e6-80-bb-e7-bb-93/"/>
+
+  <title> 初级敏捷开发一周总结 | 菜鸟PM </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">菜鸟PM</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                初级敏捷开发一周总结
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2015-02-01T22:11:49+08:00" content="2015-02-01">
+              2015-02-01
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/产品经理/" itemprop="url" rel="index">
+                    <span itemprop="name">产品经理</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <div><br><div><span style="font-family: 微软雅黑;">上周在老大的发起下开始用敏捷的方法来管理项目，之所以加个初级，是因为对于敏捷开发的理解只来源网上的几篇文章而已，并没有系统的去学习整个流程。</span><br><div><span style="font-family: 微软雅黑;"> </span></div><br><div><span style="font-family: 微软雅黑;">先简单地说下我们的项目是如何进行初级敏捷开发的。<br></span><br><div><span style="font-family: 微软雅黑;"> </span></div><br><div><span style="font-family: 微软雅黑;">第一步：整理目前的工作任务，将每个工作任务分为Task、Doing、Check、Done，并贴在看板上。</span></div><br><div><span style="font-family: 微软雅黑;">这一步的目的在于让项目成员知道我们做过什么，正在做什么以及未来会做什么，心中对整个项目有一个总体的了解，避免空想导致任务任务太多而无法处理。</span></div><br><div><span style="font-family: 微软雅黑;"> </span></div><br><div><span style="font-family: 微软雅黑;"> </span></div><br><div><span style="font-family: 微软雅黑;">第二步：将每个任务标明优先级、对接人以及完成时间。优先解决优先级高的任务，避免花费大量时间处理优先级低的任务。</span></div><br><div><span style="font-family: 微软雅黑;">并不是每个人都有良好的时间管理的概念和方法，而这一步就在于帮助项目人员做时间管理。作为产品，我也知道我下一步该整理哪些需求，出哪些文档。</span></div><br><div><span style="font-family: 微软雅黑;"> </span></div><br><div><span style="font-family: 微软雅黑;">第三步：每日晨会，说明三个问题1、我昨天做了什么？2、我遇到什么问题？3、我今天会做什么？</span></div><br><div><span style="font-family: 微软雅黑;">产品经理的一个很重要的任务就是保证团队的信息同步，请原谅我最近才想明白这个道理，而晨会的作用就是保证团队成员的信息同步，彼此知道其它人的任务进度，必要时能够腾出时间帮助那些需要帮助的同事。于此同时，产品上的改动和新需求，应该在早会后及时与所有相关的人员进行说明、讲解、讨论。</span></div><br><div><span style="font-family: 微软雅黑;"> </span></div><br><div><span style="font-family: 微软雅黑;">第四步：每天结束前产品、设计、测试处理Check中的任务</span></div><br><div><span style="font-family: 微软雅黑;">检查技术已经开发完成的任务，解决其中的BUG，大家一起，尽早将check中的任务放到Done列表中。</span></div><br><div><span style="font-family: 微软雅黑;"> </span></div><br><div><span style="font-family: 微软雅黑;"> </span></div><br><div><span style="font-family: 微软雅黑;">回顾整个流程，这套方法跟时间管理中的GTD以及腾讯内部的工作方法PDCA有些共通点，Plan、Do、Check、Action。只不过GTD是个人的时间管理，而敏捷是团队的时间管理。</span></div><br><div><span style="font-family: 微软雅黑;"> </span></div><br><div><span style="font-family: 微软雅黑;">在执行过程中，依然发现还是有一些问题需要解决。</span></div><br><div><span style="font-family: 微软雅黑;"> </span></div><br><div><span style="font-family: 微软雅黑;">问题1：无法帮助技术创造unbroken time。</span></div><br><div><span style="font-family: 微软雅黑;">由于反馈人员的缺乏，无法在技术把任务放到check栏中，及时给予技术测试的反馈，导致技术同时在处理Check和Doing中的任务。</span></div><br><div><span style="font-family: 微软雅黑;"> </span></div><br><div><span style="font-family: 微软雅黑;">解决办法：</span></div><br><div><span style="font-family: 微软雅黑;">在不增加人手的情况下，产品出产品文档的时候，在文挡后面附上简单的测试用例，技术开发完成后自己检查自己写的程序，只有通过所有的测试用例后才能将任务从Doingk标记为Check，而且自己检查也能加快BUG的解决效率。</span></div><br><div><span style="font-family: 微软雅黑;"> </span></div><br><div><span style="font-family: 微软雅黑;">问题2：每个人的任务互相交错</span></div><br><div><span style="font-family: 微软雅黑;">往往会出现的情况是，一个技术的任务需要另外一个技术提供接口，导致当前任务被卡住无法完成。</span></div><br><div><span style="font-family: 微软雅黑;"> </span></div><br><div><span style="font-family: 微软雅黑;">解决办法：拆分任务，将每个任务都拆分成可以单独执行并完成的任务，例如将问题中的任务拆分为两个，任务1，提供接口，任务2，技术开发。只有当任务1完成后才开始进行任务2.</span></div><br><div><span style="font-family: 微软雅黑;"> </span></div><br><div><span style="font-family: 微软雅黑;"> </span></div><br><div><span style="font-family: 微软雅黑;">好了，就暂时总结这么多了，这一周的情况从我的角度来看却是比之前要好很多，我知道每个人在做什么，我也知道下一步要做什么，当然这些东西都是很初级的，接下来开始看这本了：</span></div><br><div><a href="http://www.rokpm.com/wp-content/uploads/2015/02/IMG_1869.jpg" target="_blank" rel="external"><img src="http://www.rokpm.com/wp-content/uploads/2015/02/IMG_1869-300x300.jpg" alt="IMG_1869"></a></div><br></div><br><div><span style="font-family: 微软雅黑;"> </span></div><br><div><span style="font-family: 微软雅黑;"> </span></div><br><div><span style="font-family: 微软雅黑;"> </span></div><br><div><span style="font-family: 微软雅黑;"> </span></div><br></div><br></div>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/项目管理/" rel="tag">#项目管理</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/01/21/e6-88-91-e6-83-b3-e5-86-99-e7-82-b9-e5-88-ab-e7-9a-84-e4-b8-9c-e8-a5-bf-ef-bc-8c-e5-a6-82-e6-9e-9c-e8-bf-99-e7-ae-97-e6-98-af2015-e5-b9-b4-e7-9a-84-e8-ae-a1-e5-88-92-e7-9a-84-e8-af-9d-ef-bc-81/" rel="next" title="我想写点别的东西，如果这算是2015年的计划的话！">
+                <i class="fa fa-chevron-left"></i> 我想写点别的东西，如果这算是2015年的计划的话！
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/03/17/e5-9c-a8-e8-b5-84-e8-ae-af-e4-b8-ad-e8-bf-b7-e5-a4-b1-e4-ba-86-e8-87-aa-e5-b7-b1/" rel="prev" title="在资讯中迷失了自己">
+                在资讯中迷失了自己 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="叶新(Sam)" />
+          <p class="site-author-name" itemprop="name">叶新(Sam)</p>
+          <p class="site-description motion-element" itemprop="description">体验一个更大的世界</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">47</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">叶新(Sam)</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
